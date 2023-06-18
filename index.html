@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="/script.js" defer></script>
+    <title>Etch-a-Sketch</title>
+  </head>
+  <body>
+    <div class="body">
+      <div class="header">
+        <h1 class="title">Etch-a-Sketch</h1>
+      </div>
+      <div class="option">
+        <div class="btnOption">
+          <button class="pencil" onclick="changeColor(`black`)">Black</button>
+          <button class="eraser" onclick="changeColor(`white`)">Eraser</button>
+          <button class="shade" onclick="changeColor(`grey`)" id="shade">
+            Grey
+          </button>
+          <button class="colorPicker">
+            <input type="color" value="#000000" id="input-color" />
+          </button>
+          <button class="rainbow" id="rainbow">Rainbow</button>
+          <button class="clear" onclick="clearCanvas()">Clear Canvas</button>
+        </div>
+        <div class="slider">
+          <input type="range" min="8" max="64" value="16" id="slider" />
+          <p id="sliderValue" class="slider">Canvas Size: 16 x 16</p>
+        </div>
+      </div>
+      <div class="canvasHolder">
+        <div class="canvas"></div>
+      </div>
+      <div class="footer"></div>
+      <p class="acknowledgement">
+        Made by © <a href="https://github.com/Gaburielu">Gaburielu</a> 2023 :
+        <a href="https://www.theodinproject.com/about">The Odin Project</a>
+      </p>
+    </div>
+  </body>
+</html>
