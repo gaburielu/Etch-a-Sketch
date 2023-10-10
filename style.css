@@ -8,7 +8,7 @@ body{
   height: auto;
   display: flex;
   flex-direction: column;
-  flex-wrap: n0-wrap;
+  flex-wrap: no-wrap;
   align-items: center;
   gap: 10px;
 }
